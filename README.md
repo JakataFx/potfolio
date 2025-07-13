@@ -1,3 +1,5 @@
+# potfolio
+A personal portfolio showcasing my work as a Full Stack Web Developer and Forex/Crypto Trader. Features projects, trading insights, and a simplified trading handbook for beginners and enthusiasts.
 # 🎨 SWE FullStack Web Developer and Forex-Crypto  Trading insights.
 
 A fully responsive, vibrant one-page portfolio website showcasing my work as a **Full Stack Web Developer and Forex/Crypto Trader** with multidisciplinary expertise in:

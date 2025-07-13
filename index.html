@@ -10,10 +10,11 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" /> 
 </head>
 <body data-bs-theme="light">
+ 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top shadow bg-white">
     <div class="container">
-       <img src="images/logo.jpg" alt="portfolio" width="40" height="34" class="d-inline-block align-text-top">
+       <img src="images/logo.svg.png" alt="portfolio" width="40" height="34" class="d-inline-block align-text-top">
       <a class="navbar-brand text-primary fw-bold" href="#">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -32,22 +33,53 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  </section>
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Trading Strategy Masterclass</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Learn the winning Hybrid Pro Trading Strategy in a one on one Masterclass.(pro  traders only)
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Click Here for 50% off</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Black Friday PROMO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        NFP NEWS GIVEAWAY 50% discount on our Simplified Trading Handbook every first friday of the month "Currency Chronicles"Grab a copy Now!!!.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Learn to Trade</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-danger align-items-center text-center" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">HOT ZONE</button>
+
+
+   <!-- Hero Section -->
   <section class="hero d-flex align-items-center text-center text-white" id="hero">
     <div class="container">
       <h1 class="display-4 fw-bold">Roland's Potfolio</h1>
       <p class="lead">Jakata Fx Pro Trader/Financial Market Analyst</p>
       <a href="#contact" class="btn btn-warning btn-lg mt-3">Let's Connect</a>
-       <a href="#contact" class="btn btn-warning btn-lg mt-3" download="index.html">Download CV</a>
+       <a href="images/AGWE_ROLAND_FULL_STACK_WEB_DEVELOPER_TRADER_CV.pdf.pdf" class="btn btn-warning btn-lg mt-3" download="AGWE_ROLAND_FULL_STACK_WEB_DEVELOPER_TRADER_CV">Download CV</a>
     </div>
   </section>
-  <!-- Creating  slide with previous and next button -->
-  <div  id="root">
-    <script type="module" src="/src/main.tsx"></script>
-</div>
-  </section>
-
-  <!-- About Section -->
+   
+ <!-- About Section -->
   <section class="py-5" id="about">
     <div class="container">
       <div class="row align-items-center">
@@ -77,6 +109,7 @@ Let’s connect and shape the future of trading and technology.
             <div>
               <h3 class="counter" data-target="46">0</h3>
               <p>Tools Mastered</p>
+              <button class="open-modal" data-modal="modal-home">Home</button>
             </div>
           </div>
         </div>
@@ -84,22 +117,6 @@ Let’s connect and shape the future of trading and technology.
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section class="bg-light py-5" id="projects">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2>My Projects</h2>
-        <div id="filters" class="btn-group mt-3">
-          <button class="btn btn-outline-primary active" data-filter="all">All</button>
-          <button class="btn btn-outline-primary" data-filter="data">Trading Handbook </button>
-          <button class="btn btn-outline-primary" data-filter="web">Web</button>
-          <button class="btn btn-outline-primary" data-filter="marketing">Trading Strategy</button>
-          <button class="btn btn-outline-primary" data-filter="design">Forex$Crypto Trading</button>
-          <button class="btn btn-outline-primary" data-filter="ai">AI</button>
-        </div>
-      </div>
-      </div>
-      </section>
       <div class="row g-4" id="projectGrid">
         <!-- Currency Chronicles-->
         <div class="col-md-6 col-lg-4 data">
@@ -152,6 +169,7 @@ The academy offers a range of courses, tutorials, and webinars that cover variou
 including technical analysis, fundamental analysis, risk management, and trading psychology.
 This course is designed to cater to both beginners and experienced traders, providing a comprehensive understanding
 of the markets and the skills needed to execute successful trades.</p>
+
 <!-- <a href="#contact" class="btn btn-primary btn-lg mt-3">Enroll Now</a> -->
 <a class="btn btn-primary" href="#contact" role="button">Enroll</a>
             </div>
@@ -169,30 +187,18 @@ of the markets and the skills needed to execute successful trades.</p>
             </div>
           </div>
           </div>
+
+
   <!-- Services Section -->
   <section class="py-5" id="services">
-    <div class="container" >
+    <div class="container">
       <div class="text-center mb-5">
         <h2>Services Offered</h2>
       </div>
-      </div>
       <div class="row text-center">
         <div class="col-md-4 mb-4">
-        <i class="bi bi-bar-chart fs-1 text-success"></i>
-          <h5 class="mt-3">Data Analytics & Visualization</h5>
-        </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <i class="bi bi-mortarboard fs-1 text-success"></i>
-          <h5 class="mt-3">Forex/Crypto Trading</h5>
-        </div>
-         <div class="col-md-4 mb-4">
-          <i class="bi bi-book fs-1 text-success"></i>
-          <h5 class="mt-3">Currency Chronicles</h5>
-        </div>
-        <div class="col-md-4 mb-4">
-          <i class="bi bi-cash-coin fs-1 text-success"></i>
-          <h5 class="mt-3">Hybrid Pro Trading Strategy</h5>
+          <i class="bi bi-bar-chart fs-1 text-success"></i>
+          <h5 class="mt-3">Forex and Crypto Trading</h5>
         </div>
         <div class="col-md-4 mb-4">
           <i class="bi bi-laptop fs-1 text-success"></i>
@@ -210,9 +216,11 @@ of the markets and the skills needed to execute successful trades.</p>
           <i class="bi bi-palette fs-1 text-success"></i>
           <h5 class="mt-3">Branding & Graphic Design</h5>
         </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
+   <!-- Contact Section -->
   <section class="bg-light py-5" id="contact">
     <div class="container">
       <div class="text-center mb-4">
@@ -230,6 +238,7 @@ of the markets and the skills needed to execute successful trades.</p>
         </div>
         <div class="col-12 text-center">
           <button type="submit" class="btn btn-primary">Send Message</button>
+          <button class="open-modal" data-modal="modal-contact">Contact</button>
         </div>
       </form>
     </div>
@@ -237,7 +246,7 @@ of the markets and the skills needed to execute successful trades.</p>
 
   <!-- AI Chatbot Placeholder -->
   <div id="chatbot" class="chatbot shadow">
-    <div class="chatbot-header chatbot-toggle">🤖 Ask Me!</div>
+    <div class="chatbot-header chatbot-toggle">🤖 Chat</div>
     <div class="chatbot-body">
       <!-- JavaScript will populate this -->
     </div>
@@ -271,9 +280,63 @@ of the markets and the skills needed to execute successful trades.</p>
       <p class="mt-3 small">&copy; 2025 Jakata Fx. All rights reserved.</p>
     </div>
   </footer>
+  <!-- Trigger/Open Modal button -->
+  <button id="openModal">View Project Details</button>
+
+  <!-- Modal structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>All about this Project Portfolio</h2>
+      <p># 🎨 SWE FullStack/Pro Trader Creative Portfolio and insights.<br>
+
+A fully responsive, vibrant one-page portfolio website for a **SWE FullStack/Pro Trader** with multidisciplinary expertise in:<br>
+
+- 📊Forex and Cryptocurrency Trading <br>
+- 🌐 Web Development<br>
+- 📣 Digital Marketing & Campaign Strategy<br>
+- 📷 Photography<br>
+- 🎨 Branding & Graphic Design<br>
+
+<h3>🚀 Features</h3><br>
+
+- **Hero Section** with name, tagline, and CTA<br>
+- **About Me** section with animated counters<br>
+- **Portfolio** with 8+ filterable project cards and modal support<br>
+- **Services** showcased with icons and brief descriptions<br>
+- **Contact Form** using [Formspree](https://formspree.io/)<br>
+- **Sticky Navbar** and **Smooth Scrolling**<br>
+- **Dark/Light Mode** toggle<br>
+- **AI Chatbot Placeholder** (expandable with OpenAI API)<br>
+- **Fully responsive** with Bootstrap 5 (mobile-first design)<br>
+<h3> 🎯 Tech Stack</h3><br>
+
+- HTML5, CSS3 (Custom + Bootstrap 5+AI)<br>
+- JavaScript (Vanilla)<br>
+- Font Awesome for icons<br>
+- Google Fonts (optional)<br>
+- Formspree for contact submissions<br>
+
+
+<h3>🎨 Color Palette</h3><br>
+
+| Role            | Color Name       | Hex Code    |<br>
+|------------------|------------------|-------------|<br>
+| Primary          | Royal/Navy Blue  | `#1e3a8a`   |<br>
+| Accent           | Sky Blue         | `#3b82f6`   |<br>
+| Highlight        | Yellow           | `#facc15`   |<br>
+| Background       | White            | `#ffffff`   |<br>
+| Text/Base        | Dark Gray        | `#333333`   |<br>
+
+> **Tip:** Uses the 60-30-10 rule for color distribution and ensures accessibility compliance.<br>
+
+## 📁 File Structure</p>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
